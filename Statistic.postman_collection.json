@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "da69736d-dc7d-4cf2-a27d-23ea35e43c08",
+		"name": "Statistic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17986589"
+	},
+	"item": [
+		{
+			"name": "Save statistic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"view\": 55,\n    \"click\": 55,\n    \"cost\": 1.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/statistics/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"statistics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear statistic",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/statistics/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"statistics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get statistic by date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/statistics/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"statistics",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
